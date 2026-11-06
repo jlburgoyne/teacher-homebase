@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ELA Homebase</title>
+  <!--
+    Static recreation of a Google Sites course homepage, for documentation.
+    The teacher's name, the school, and every link have been replaced with placeholders.
+  -->
+  <style>
+    :root { --green: #1b5e2f; --blue: #1a4a6b; --plum: #5c1a36; --ink: #222; --muted: #666; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Roboto, "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #fff; }
+    .site-title { padding: 16px 28px; font-size: 18px; letter-spacing: 0.06em; }
+    header { text-align: center; padding: 40px 16px 56px; }
+    header h1 { color: var(--green); font-size: 48px; font-weight: 500; margin: 0; }
+    header .rule { width: 100px; height: 4px; background: var(--green); margin: 18px auto; }
+    header p { font-size: 26px; font-weight: 500; margin: 0; }
+    main { max-width: 1160px; margin: 0 auto; padding: 0 24px 48px; }
+    h2 { color: var(--green); font-size: 24px; font-weight: 500; margin: 48px 8px 28px; }
+    .links { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px 30px; }
+    .links a { display: block; background: var(--green); color: #fff; text-align: center; padding: 7px 10px; text-decoration: none; font-size: 16px; border-radius: 2px; }
+    .links a:hover, .links a:focus-visible { background: #144a24; }
+    .decks { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px; }
+    .deck { display: block; text-decoration: none; color: inherit; border: 1px solid #ddd; }
+    .deck .top { color: #fff; font-size: 24px; font-weight: 600; text-align: center; padding: 18px 8px; border-bottom: 4px solid var(--accent); }
+    .deck .body { text-align: center; padding: 16px 8px 52px; font-size: 13px; }
+    .deck .body em { display: block; margin-top: 8px; font-size: 11px; color: var(--muted); }
+    .deck .bottom { height: 18px; position: relative; }
+    .deck .bottom::after { content: ""; position: absolute; left: 50%; top: 2px; width: 14px; height: 14px; margin-left: -7px; border-radius: 50%; background: var(--accent); }
+    .g7 { --c: var(--green); --accent: #d4a017; --tint: #eaf4ec; }
+    .g9 { --c: var(--blue); --accent: #e07b39; --tint: #e7eef6; }
+    .g11 { --c: var(--plum); --accent: #c0392b; --tint: #f4e8ee; }
+    .deck .top, .deck .bottom { background: var(--c); }
+    .deck .body { background: var(--tint); color: var(--c); }
+    hr { border: 0; border-top: 1px solid #ddd; margin: 36px 0 0; }
+    .calendar { border: 1px dashed #bbb; height: 320px; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 15px; margin: 0 8px; }
+  </style>
+</head>
+<body>
+  <div class="site-title">ELA Homebase</div>
+  <header>
+    <h1>[School] ELA</h1>
+    <div class="rule"></div>
+    <p>[Teacher name]</p>
+  </header>
+
+  <main>
+    <h2>Important Links</h2>
+    <nav class="links" aria-label="Important links">
+      <a href="#">Email</a>
+      <a href="#">Student information system</a>
+      <a href="#">Hall pass</a>
+      <a href="#">Quick Ref</a>
+      <a href="#">Curriculum platform</a>
+      <a href="#">School home</a>
+    </nav>
+
+    <h2>Daily Dashboards</h2>
+    <div class="decks">
+      <a class="deck g7" href="#"><div class="top">7th Grade ELA</div><div class="body">[School name]<em>[Teacher]'s Class</em></div><div class="bottom"></div></a>
+      <a class="deck g9" href="#"><div class="top">9th Grade ELA</div><div class="body">[School name]<em>[Teacher]'s Class</em></div><div class="bottom"></div></a>
+      <a class="deck g11" href="#"><div class="top">11th Grade ELA</div><div class="body">[School name]<em>[Teacher]'s Class</em></div><div class="bottom"></div></a>
+    </div>
+
+    <hr>
+    <h2>School Calendar</h2>
+    <div class="calendar">Embedded school calendar</div>
+  </main>
+</body>
+</html>
